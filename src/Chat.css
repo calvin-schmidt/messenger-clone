@@ -1,0 +1,125 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  flex-grow: 5;
+  z-index: 70;
+}
+
+.chat__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  -webkit-box-shadow: 0px 1px 5px -2px #818181;
+  box-shadow: 0px 1px 5px -2px #818181;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.chat__headerInfo h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.chat__headerInfo p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.chat__headerRight_button {
+  background: transparent;
+  outline-width: 0;
+  border-style: none;
+  color: rgb(0, 121, 255);
+  cursor: pointer;
+}
+
+.chat__headerRight_button .MuiSvgIcon-root {
+  font-size: 26px;
+}
+
+.chat__body {
+  flex: 1;
+  overflow: scroll;
+  max-width: 100%;
+}
+
+.chat__messageContainer {
+  max-width: 100%;
+}
+
+.chat__timestamp {
+  text-align: center;
+  font-size: 10px;
+  color: rgb(70, 70, 70);
+}
+
+.chat__message {
+  background-color: rgb(224, 226, 232);
+  width: fit-content;
+  margin-left: 10px;
+  border-radius: 15px;
+  padding: 7px 12px;
+  font-size: 14px;
+  max-width: 70%;
+}
+
+.sender {
+  margin-left: auto;
+  margin-right: 10px;
+  background-color: rgb(0, 121, 255);
+  color: white;
+}
+
+.chat__footer {
+  display: flex;
+  height: 35px;
+  padding: 8px;
+  align-items: center;
+}
+
+.chat__footer_iconContainer {
+  display: flex;
+  min-width: 110px;
+}
+
+.chat__footer_icon {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.chat__footer form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  background-color: rgb(238, 240, 243);
+}
+
+.chat__footer form input {
+  background: transparent;
+  outline-width: 0;
+  border-style: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.chat__footer form button {
+  display: none;
+}
+
+.chat__footerForm_icon {
+  margin: 0 10px 0 5px;
+  min-width: 20px;
+  cursor: pointer;
+}
+
+.chat__footer_likeContainer {
+  margin-left: 10px;
+  min-width: 20px;
+}

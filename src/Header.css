@@ -1,0 +1,154 @@
+.header {
+  max-height: 55px;
+  max-width: 100vw;
+  -webkit-box-shadow: 0px 0px 6px -2px #818181;
+  box-shadow: 0px 0px 6px -2px #818181;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 18px;
+  background-color: white;
+  z-index: 99;
+}
+
+.header__left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__left_logo_container {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.header__left_logo_link {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.header__left_logo_img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header__searchContainer {
+  display: none;
+  height: 30px;
+  border-radius: 20px;
+  width: 200px;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.header__searchContainer .MuiSvgIcon-root {
+  padding: 0 5px 0 5px;
+  color: gray;
+  cursor: pointer;
+}
+
+.header__searchContainer input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border-style: none;
+  outline-width: 0;
+  font-size: 15px;
+}
+
+.header__button_round {
+  display: block;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline-width: 0;
+  border-style: none;
+  color: gray;
+  margin-right: 5px;
+  background-color: rgb(224, 226, 232);
+}
+
+.header__button_round:hover {
+  background-color: rgb(213, 214, 220);
+}
+
+.header__middle {
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 20px;
+}
+
+.header__button_rec {
+  height: 40px;
+  width: 100%;
+  margin-left: 5px;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  background-color: white;
+  outline-width: 0;
+}
+
+.SvgIcon {
+  color: white;
+}
+
+.header__button_rec:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.header__right {
+  display: flex;
+  max-height: 100%;
+  width: fit-content;
+}
+
+.header__right .MuiSvgIcon-root {
+  color: black;
+}
+
+.header__right_userInfo {
+  display: flex;
+  padding-right: 15px;
+  max-height: 40px;
+  align-items: center;
+  max-width: 100px;
+  justify-content: flex-end;
+}
+
+.header__right_userInfo img {
+  max-height: 70%;
+  width: auto;
+  border-radius: 50%;
+}
+
+.header__right_userInfo h3 {
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (min-width: 1260px) {
+  #header__searchRound {
+    display: none;
+  }
+  .header__searchContainer {
+    display: flex;
+  }
+}
+
+@media (max-width: 1259px) {
+  #header__searchRound {
+    display: block;
+  }
+  .header__searchContainer {
+    display: none;
+  }
+}

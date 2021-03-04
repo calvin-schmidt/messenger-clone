@@ -1,0 +1,49 @@
+.chatSettings {
+  flex-basis: 200px;
+  max-width: 300px;
+  flex-grow: 1;
+  padding: 10px;
+  max-height: 100%;
+  border-left: 1px solid rgb(229, 229, 229);
+  display: flex;
+  flex-direction: column;
+}
+
+.chatSettings__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.chatSettings__header .MuiAvatar-root {
+  height: 80px;
+  width: 80px;
+}
+
+.chatSettings__header h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.chatSettings__header p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.chatSettings__menu {
+  margin-top: 15px;
+}
+
+.chatSettings__menuItem {
+  max-width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatSettings__menuItem h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
